@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FruitMarket | Blox Fruits Values</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #080a0f;
+      color: white;
+    }
+
+    /* BARRA SUPERIOR */
+    header {
+      background: #10131a;
+      border-bottom: 1px solid #252a35;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffd84d;
+    }
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+      background: radial-gradient(circle at center, #172033, #080a0f 65%);
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #ffd84d;
+    }
+
+    .hero p {
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 25px;
+      background: #ffd84d;
+      color: #111;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* CONTENIDO */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    /* BUSCADOR */
+    #search {
+      width: 100%;
+      padding: 14px;
+      background: #11151d;
+      border: 1px solid #292f3c;
+      border-radius: 8px;
+      color: white;
+      margin-bottom: 25px;
+      outline: none;
+    }
+
+    /* FRUTAS */
+    .fruits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .fruit {
+      background: #11151d;
+      border: 1px solid #292f3c;
+      border-radius: 12px;
+      padding: 20px;
+      transition: 0.2s;
+    }
+
+    .fruit:hover {
+      transform: translateY(-3px);
+      border-color: #ffd84d;
+    }
+.fruit-especial {
+  background: #ffd84d;
+  border: 1px solid #292f3c;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.fruit-especial h3,
+.fruit-especial .value,
+.fruit-especial .demand,
+.fruit-especial .trend {
+  color: #111;
+}
+
+.fruit-especial:hover {
+  transform: translateY(-3px);
+  border-color: #00ff00;
+}
+
+    .fruit-gamepass {
+  background: #7fdfff;
+  border: 1px solid #292f3c;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.fruit-gamepass h3,
+.fruit-gamepass .value,
+.fruit-gamepass .demand,
+.fruit-gamepass .trend {
+  color: #111;
+}
+
+.fruit-gamepass:hover {
+  transform: translateY(-3px);
+  border-color: #0099cc;
+}
+   .fruit-img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  margin: 0 auto 12px auto;
+  border-radius: 8px;
+}
+    .fruit h3 {
+      margin-bottom: 10px;
+    }
+
+    .value {
+      font-size: 24px;
+      color: #ffd84d;
+      font-weight: bold;
+    }
+
+    .demand {
+      color: #65e68a;
+      margin-top: 8px;
+    }
+
+    .trend {
+      color: #55a7ff;
+      margin-top: 5px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+  <body>
+<header>
+  <div class="logo">Real values Blox Fruit</div>
+
+  <nav>
+    <a href="#">Values</a>
+    <a href="#">Trades</a>
+    <a href="#">Market</a>
+  </nav>
+</header>
+
+
+<section class="hero">
+
+  <h1>The <span>Real</span> Blox Fruits Values</h1>
+
+  <p>
+    Values basados en: PvP🗡 - Farm🪏 - valor de mercado💵 - numero de frutas📦
+  </p>
+
+  <a href="#values" class="button">
+    ¡Buscar Trades!
+  </a>
+
+</section>
+
+<h2 class="container" id="values">
+
+  
+  <h2 class="section-title">
+    🔥 Values semanales:
+  </h2>
+
+  <input
+    type="text"
+    id="search"
+    placeholder="🔎 Buscar fruta...">
+<h2 class="fruits" id="fruitList">
+
+    <div class="fruit">
+      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/65/Kitsune_Fruit.png" alt="Kitsune" class="fruit-img">
+      <h3>🦊 Kitsune</h3>
+
+      <div class="value">
+        140M - 270M
+      </div>
+
+      <div class="demand">
+        🔥 Demanda: 9.9/10
+      </div>
+
+      <div class="trend">
+        📈 +4.2%
+      </div>
+    </div>
+
+    <div class="fruit">
+    <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/29/Dragon_Fruit.png" alt="Dragon" class="fruit-img">
+      <h3>🐉 Dragon</h3>
+      <div class="value"> West: 560M-1B east: 460M-1B
+      </div>
+
+      <div class="demand">
+        🔥 Demanda: 9.9/10
+      </div>
+
+      <div class="trend">
+        📈 -10%
+      </div>
+    </div>
+
+
+    <div class="fruit">
+      <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/14/Tiger_Fruit.png" alt="Tiger" class= "fruit-img">
+      <h3>Tiger🔥🦁 </h3>
+
+      <div class="value">
+        80M -120M
+      </div>
+
+      <div class="demand">
+        🔥 Demanda: 9.4/10
+      </div>
+
+      <div class="trend">
+        📉 -1.4%
+      </div>
+    </div>
+   <div class="fruit">
+     <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/02/Dough_Fruit.png" alt= "dough" class= "fruit-img">
+      <h3>🍩 Dough</h3>
+
+      <div class="value" > 15M - 25M </div>
+     <div class="demand">
+        🔥 Demanda: 8.4/10 </div> 
+ <div class="trend">
+        📉 -27%
+      </div>
+   </div>
+
+<!-- Spirit -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/66/Spirit_Fruit.png" alt= "spirit" class= "fruit-img">
+  <h3>👻 Spirit</h3>
+  <div class="value">20M - 25M</div>
+  <div class="demand">🔥 Demanda: 8.5/10 </div>
+  <div class="trend">📈 +2.1%</div>
+</div>
+
+<!-- Venom -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/d2/Venom_Fruit.png" alt= "venom" class= "fruit-img"> 
+  <h3>☠️ Venom</h3>
+  <div class="value">15M-20M</div>
+  <div class="demand">🔥 Demanda: 8.2/10</div>
+  <div class="trend">📈 +0.3%</div>
+</div>
+
+<!-- Control -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/19/Control_Fruit.png" alt= "control" class= "fruit-img">
+  <h3>🌀 Control</h3>
+  <div class="value">130M -160M </div>
+  <div class="demand">🔥 Demanda: 9.8/10</div>
+  <div class="trend">📈 +3%</div>
+</div>
+
+<!-- T-Rex -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/d9/T-Rex_Fruit.png" alt= "T-rex" class= "fruit-img">
+  <h3>🦖 T-Rex</h3>
+  <div class="value">15M-25M</div>
+  <div class="demand">🔥 Demanda: 8.9/10</div>
+  <div class="trend">📉 -0.1%</div>
+</div>
+
+<!-- Mammoth -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/9/95/Mammoth_Fruit.png" alt= "mammoth" class= "fruit-img">
+  <h3>🐘 Mammoth</h3>
+  <div class="value">10M-20M</div>
+  <div class="demand">🔥 Demanda: 8.8/10</div>
+  <div class="trend"> 📈 0%</div>
+</div>
+
+<!-- Buddha -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/df/Buddha_Fruit.png" alt= "buddha" class= "fruit-img">
+  <h3>🧘 Buddha</h3>
+  <div class="value">10M-20M</div>
+  <div class="demand">🔥 Demanda: 8.3/10</div>
+  <div class="trend">📈 +0.5%</div>
+</div>
+
+<!-- Rocket -->
+<div class="fruit">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/1b/Rocket_fruit_gif.gif" alt="rocket" class="fruit-img">
+  <h3>🚀 Rocket</h3>
+  <div class="value">700T💀🔥</div>
+  <div class="demand">🔥 Demanda: 1000/10</div>
+  <div class="trend">📈‼️ 9999%</div>
+</div>
+
+<!-- Spin -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/88/Spin_Fruit.png" alt= "spin" class= "fruit-img">
+  <h3>🌀 Spin</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 5/10</div>
+  <div class="trend">📉 -7.236.402%</div>
+</div>
+
+<!-- Blade -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/0e/Chop_Fruit.png" alt= "blade" class= "fruit-img">
+  <h3>🗡️ Blade</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 7/10</div>
+  <div class="trend">📉 -47.888%</div>
+</div>
+
+<!-- Spring -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8a/Spring_Fruit.png" alt= "spring" class= "fruit-img">
+  <h3>📎⛓️ Spring</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 4/10</div>
+  <div class="trend">📉 -183.294%</div>
+</div>
+
+<!-- Bomb -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/43/Bomb_Fruit.png" alt="Bomb" class="fruit-img"> 
+  <h3>💣 Bomb</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 5.4/10</div>
+  <div class="trend">📉 -9.000%</div>
+</div>
+
+<!-- Smoke -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/7e/Smoke_Fruit.png" alt="Smoke" class="fruit-img">
+  <h3>💨 Smoke</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 7/10</div>
+  <div class="trend">📉 -628%</div>
+</div>
+
+<!-- Spike -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/ce/Spike_Fruit.png" alt="Spike" class="fruit-img"> 
+  <h3>🔱 Spike</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 3/10</div>
+  <div class="trend">📉 -290.3%</div>
+</div>
+
+<!-- Flame -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c4/Flame_Fruit.png" alt="Flame" class="fruit-img"> 
+  <h3>🔥 Flame</h3>
+  <div class="value">2M-3M</div>
+  <div class="demand">🔥 Demanda: 8.1/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Ice -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c5/Ice_Fruit.png" alt="Ice" class="fruit-img">
+  <h3>❄️ Ice</h3>
+  <div class="value">3M-5M</div>
+  <div class="demand">🔥 Demanda: 9/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Sand -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/72/Sand_Fruit.png" alt="Sand" class="fruit-img"> 
+  <h3>🏜️ Sand</h3>
+  <div class="value">3M-4M</div>
+  <div class="demand">🔥 Demanda: 2.9/10</div>
+  <div class="trend">📈 10%</div>
+</div>
+
+<!-- Dark -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/5c/Dark_Fruit.png" alt="Dark" class="fruit-img">
+  <h3>🌑 Dark</h3>
+  <div class="value">4M-5M</div>
+  <div class="demand">🔥 Demanda: 2.8/10</div>
+  <div class="trend">📈 0.1%</div>
+</div>
+
+<!-- Eagle -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/53/Eagle_Fruit.png" alt="Eagle" class="fruit-img">
+  <h3>🦅 Eagle</h3>
+  <div class="value">1M-2M</div>
+  <div class="demand">🔥 Demanda: 6.7/10</div>
+  <div class="trend">📉 -90%</div>
+</div>
+
+<!-- Diamond -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/88/Diamond_Fruit.png" alt="Diamond" class="fruit-img">
+  <h3>💎 Diamond</h3>
+  <div class="value">5M-6M</div>
+  <div class="demand">🔥 Demanda: 7/10</div>
+  <div class="trend">📈 3.1%</div>
+</div>
+
+<!-- Light -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/83/Light_Fruit.png" alt="Light" class="fruit-img">
+  <h3>💡 Light</h3>
+  <div class="value">5M</div>
+  <div class="demand">🔥 Demanda: 8/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Rubber -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/5c/Rubber_Fruit.png" alt="Rubber" class="fruit-img">
+  <h3>🛞 Rubber</h3>
+  <div class="value">1M-3M</div>
+  <div class="demand">🔥 Demanda: 3/10</div>
+  <div class="trend">📉 -7.9%</div>
+</div>
+
+<!-- Ghost -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8c/Ghost_Fruit.png" alt="Ghost" class="fruit-img">
+  <h3>👻 Ghost</h3>
+  <div class="value">5M-8M</div>
+  <div class="demand">🔥 Demanda: 7.3/10</div>
+  <div class="trend">📈 0.6%</div>
+</div>
+
+<!-- Magma -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/27/Magma_Fruit.png" alt="Magma" class="fruit-img">
+  <h3>🌋 Magma</h3>
+  <div class="value">6M-10M</div>
+  <div class="demand">🔥 Demanda: 8.3/10</div>
+  <div class="trend">📈 10%</div>
+</div>
+
+<!-- Quake -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/42/Quake_Fruit.png" alt="Quake" class="fruit-img"> 
+  <h3>🌊 Quake</h3>
+  <div class="value">5M-8M</div>
+  <div class="demand">🔥 Demanda: 6/10</div>
+  <div class="trend">📈 +1%</div>
+</div>
+
+<!-- Love -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/b3/Love_Fruit.png" alt="Love" class="fruit-img"> 
+  <h3>💗 Love</h3>
+  <div class="value">4M-6M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">📉 -6.0%</div>
+</div>
+
+<!-- Creation -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/44/Creation_Fruit.png" alt="Creation" class="fruit-img">
+  <h3>✨ Creation</h3>
+  <div class="value">8M-10M</div>
+  <div class="demand">🔥 Demanda: 6.9/10</div>
+  <div class="trend">📈 2.4%</div>
+</div>
+
+<!-- Spider -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/6/61/Spider_Fruit.png" alt="Spider" class="fruit-img">
+  <h3>🕷️ Spider</h3>
+  <div class="value">3M-5M</div>
+  <div class="demand">🔥 Demanda: 2/10</div>
+  <div class="trend">📈 0.1%</div>
+</div>
+
+<!-- Sound -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/ba/Sound_Fruit.png" alt="Sound" class="fruit-img">
+  <h3>🔊 Sound</h3>
+  <div class="value">3M-5M</div>
+  <div class="demand">🔥 Demanda: 4/10</div>
+  <div class="trend">📉 -7%</div>
+</div>
+
+<!-- Phoenix -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/f/fc/Phoenix_Fruit.png" alt="Phoenix" class="fruit-img"> 
+  <h3>🦅 Phoenix</h3>
+  <div class="value">4M-7M</div>
+  <div class="demand">🔥 Demanda: 1/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Portal -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8a/Portal_Fruit.png" alt="Portal" class="fruit-img">
+  <h3>🌀 Portal</h3>
+  <div class="value">15M-25M</div>
+  <div class="demand">🔥 Demanda: 7/10</div>
+  <div class="trend">📉 0.2%</div>
+</div>
+
+<!-- Lightning -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/78/Lightning_Fruit.png" alt="Lightning" class="fruit-img">
+  <h3>⚡ Lightning</h3>
+  <div class="value">40M-50M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📉 10%</div>
+</div>
+
+<!-- Pain -->
+<div class="fruit">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/4/40/Pain_Fruit.png" alt="Pain" class="fruit-img">  
+  <h3>💥 Pain</h3>
+  <div class="value">15M-20M</div>
+  <div class="demand">🔥 Demanda: 8.3/10</div>
+  <div class="trend">📉 37.1%</div>
+</div>
+
+<!-- Blizzard -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c9/Blizzard_Fruit.png" alt="Blizzard" class="fruit-img">
+  <h3>🌨️ Blizzard</h3>
+  <div class="value">10M-20M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Gravity -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/5f/Gravity_Fruit.png" alt="Gravity" class="fruit-img">
+  <h3>🪐 Gravity</h3>
+  <div class="value">20M-25M</div>
+  <div class="demand">🔥 Demanda: 9.2/10</div>
+  <div class="trend">📈 2.8%</div>
+</div>
+
+<!-- Shadow -->
+<div class="fruit">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/58/Shadow_Fruit.png" alt="Shadow" class="fruit-img"> 
+  <h3>🌑 Shadow</h3>
+  <div class="value">5M-10M</div>
+  <div class="demand">🔥 Demanda: 5/10</div>
+  <div class="trend">📊 0%</div>
+</div>
+
+<!-- Gas -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/ed/Gas_Fruit.png" alt="Gas" class="fruit-img">
+  <h3>☁️ Gas</h3>
+  <div class="value">50M-80M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📈 17%</div>
+</div>
+
+<!-- Yeti -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/2f/Yeti_Fruit.png" alt="Yeti" class="fruit-img">
+  <h3>🐾 Yeti</h3>
+  <div class="value">90M-120M</div>
+  <div class="demand">🔥 Demanda: 8.7/10</div>
+  <div class="trend">📈 0.7%</div>
+</div>
+
+<!-- Magnet -->
+<div class="fruit">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/2/2f/Magnet_Fruit.png" alt="Magnet" class="fruit-img">
+  <h3>🧲 Magnet</h3>
+  <div class="value">105M-220M</div>
+  <div class="demand">🔥 Demanda: 9.1/10</div>
+  <div class="trend">📈‼️ 78.6%</div>
+</div>
+
+ <!-- Ember Dragon -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/1/1c/Ember_Dragon_Fruit_%28West%29.png" alt="Ember Dragon" class="fruit-img">
+  <h3>🔥🐉 Ember Dragon</h3>
+  <div class="value">1B-5B</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📈‼️ 29.9%</div>
+</div>
+
+<!-- Fiend Yeti -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/cd/Fiend_Fruit.png" alt="Fiend" class="fruit-img">
+  <h3>👹❄ Fiend Yeti</h3>
+  <div class="value">320M-400M</div>
+  <div class="demand">🔥 Demanda: 9/10</div>
+  <div class="trend">📈‼️ 58.4%</div>
+</div>
+
+<!-- Gravity Starlight -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/d2/Starlight_Gravity_Fruit.png" alt="Starlight Gravity" class="fruit-img">
+  <h3>🌌✨Gravity Starlight</h3>
+  <div class="value">80M-115M</div>
+  <div class="demand">🔥 Demanda: 9.2/10</div>
+  <div class="trend">📉 -0.1%</div>
+</div>
+
+<!-- Red Ghost -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/79/Scarlet_Ghost_Fruit.png" alt="Scarlet Ghost" class="fruit-img">
+  <h3>👻🟥 Red Ghost</h3>
+  <div class="value">10M-40M</div>
+  <div class="demand">🔥 Demanda: 8.3/10</div>
+  <div class="trend">📉 0.3%</div>
+</div>
+
+<!-- Emerald Diamond -->
+<div class="fruit-especial">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/3b/Emerald_Diamond_Fruit.png" alt="Emerald Diamond" class="fruit-img">  
+  <h3>🟩💎 Emerald Diamond</h3>
+  <div class="value">100M-125M</div>
+  <div class="demand">🔥 Demanda: 8/10</div>
+  <div class="trend">📈 9%</div>
+</div>
+
+<!-- Topaz Diamond -->
+<div class="fruit-especial">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/c/c4/Topaz_Diamond_Fruit.png" alt="Topaz Diamond" class="fruit-img">  
+  <h3>🟧💎 Topaz Diamond</h3>
+  <div class="value">65M-75M</div>
+  <div class="demand">🔥 Demanda: 7/10</div>
+  <div class="trend">📉 -0.9%</div>
+</div>
+
+<!-- Rose Quartz Diamond -->
+<div class="fruit-especial">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/0/04/Rose_Quartz_Diamond_Fruit.png" alt="Rose Quartz Diamond" class="fruit-img"> 
+  <h3>🩷💎 Rose Quartz Diamond</h3>
+  <div class="value">110M-210M</div>
+  <div class="demand">🔥 Demanda: 9/10</div>
+  <div class="trend">📈 2%</div>
+</div>
+
+<!-- Rubi Diamond -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/e4/Ruby_Diamond_Fruit.png" alt="Ruby Diamond" class="fruit-img">
+  <h3>🟥💎 Rubi Diamond</h3>
+  <div class="value">55M-110M</div>
+  <div class="demand">🔥 Demanda: 9/10</div>
+  <div class="trend">📈 0.6%</div>
+  
+</div>
+
+<!-- Lightning Green -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/e5/Green_Lightning_Fruit.png" alt="Green Lightning" class="fruit-img">
+  <h3>🟩⚡ Lightning Green</h3>
+  <div class="value">120M-240M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📈 1%</div>
+</div>
+
+<!-- Lightning Yellow -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/33/Yellow_Lightning_Fruit.png" alt="Yellow Lightning" class="fruit-img">
+  <h3>🟨⚡ Lightning Yellow</h3>
+  <div class="value">90M-150M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📉 -17%</div>
+</div>
+
+<!-- Lightning Purple -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/7/7d/Purple_Lightning_Fruit.png" alt="Purple Lightning" class="fruit-img">
+  <h3>🟪⚡ Lightning Purple</h3>
+  <div class="value">460M-575M</div>
+  <div class="demand">🔥 Demanda: 10/10</div>
+  <div class="trend">📈 34%</div>
+</div>
+
+<!-- Lightning Red -->
+<div class="fruit-especial">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/a/a1/Red_Lightning_Fruit.png" alt="Red Lightning" class="fruit-img">
+  <h3>🟥⚡ Lightning Red</h3>
+  <div class="value">210M-315M</div>
+  <div class="demand">🔥 Demanda: 10/10</div>
+  <div class="trend">📈 20%</div>
+</div>
+
+<!-- Pain Celestial -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/e/e4/Celestial_Fruit.png" alt="Celestial" class="fruit-img">
+  <h3>✨💥 Pain Celestial</h3>
+  <div class="value">150M-300M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📈 206%</div>
+</div>
+
+<!-- Super Spirit Pain -->
+<div class="fruit-especial">
+<img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/5/5d/Super_Spirit_Pain_Fruit.png" alt="Super Spirit Pain" class="fruit-img">  
+  <h3>👻💥 Super Spirit Pain</h3>
+  <div class="value">275M-500M</div>
+  <div class="demand">🔥 Demanda: 9.9/10</div>
+  <div class="trend">📈‼️ 106.2%</div>
+</div>
+
+<!-- Frustration Pain -->
+<div class="fruit-especial">
+ <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/3/3f/Frustration_Fruit.png" alt="Frustration" class="fruit-img"> 
+  <h3>😤🟧 Frustration Pain</h3>
+  <div class="value">225M-380M</div>
+  <div class="demand">🔥 Demanda: 9.5/10</div>
+  <div class="trend">📈 18%</div>
+</div>
+
+<!-- Sadness Pain -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/d/d1/Sadness_Fruit.png" alt="Sadness" class="fruit-img">
+  <h3>😢🟦 Sadness Pain</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 9.5/10</div>
+  <div class="trend">📈 3%</div>
+</div>
+
+<!-- Torment Pain -->
+<div class="fruit-especial">
+  <img src="https://static.wikia.nocookie.net/roblox-blox-piece/images/b/b0/Torment_Fruit.png" alt="Torment" class="fruit-img">
+  <h3>😖⬛ Torment Pain</h3>
+  <div class="value">55M-75M</div>
+  <div class="demand">🔥 Demanda: 8.5/10</div>
+  <div class="trend">📈 6.3%</div>
+</div>
+
+<!-- Thermite Bomb -->
+<div class="fruit-especial">
+  <h3>🧨 Thermite Bomb</h3>
+  <div class="value">340M-510M</div>
+  <div class="demand">🔥 Demanda: 8.4/10</div>
+  <div class="trend">📈 3%</div>
+</div>
+
+<!-- Azura Bomb -->
+<div class="fruit-especial">
+  <h3>🎆💣 Azura Bomb</h3>
+  <div class="value">390M-540M</div>
+  <div class="demand">🔥 Demanda: 6.4/10</div>
+  <div class="trend">📈 7%</div>
+</div>
+
+<!-- Nuclear Bomb -->
+<div class="fruit-especial">
+  <h3>☢️🟩Nuclear Bomb</h3>
+  <div class="value">395M-550M</div>
+  <div class="demand">🔥 Demanda: 7.4/10</div>
+  <div class="trend">📈 4%</div>
+</div>
+
+<!-- Celebration Bomb -->
+<div class="fruit-especial">
+  <h3>🎉💣 Celebration Bomb</h3>
+  <div class="value">25M-45M</div>
+  <div class="demand">🔥 Demanda: 5.8/10</div>
+  <div class="trend">📈 0.76%</div>
+</div>
+
+<!-- Requiem Eagle -->
+<div class="fruit-especial">
+  <h3>🦅🟥 Requiem Eagle</h3>
+  <div class="value">90M-120M</div>
+  <div class="demand">🔥 Demanda: 8.7/10</div>
+  <div class="trend">📈 0.1%</div>
+</div>
+
+<!-- Matrix Eagle -->
+<div class="fruit-especial">
+  <h3>🦅🟩 Matrix Eagle</h3>
+  <div class="value">80M-130M</div>
+  <div class="demand">🔥 Demanda: 8.7/10</div>
+  <div class="trend">📈 3.8%</div>
+</div>
+
+<!-- Glacier Eagle -->
+<div class="fruit-especial">
+  <h3>🦅❄️ Glacier Eagle</h3>
+  <div class="value">10M-25M</div>
+  <div class="demand">🔥 Demanda: 6.7/10</div>
+  <div class="trend">📈 2.3%</div>
+</div>
+
+<!-- Parrot Eagle -->
+<div class="fruit-especial">
+  <h3>🟥🦅🟨 Parrot eagle</h3>
+  <div class="value">120M-235M</div>
+  <div class="demand">🔥 Demanda: 7.7/10</div>
+  <div class="trend">📈 10%</div>
+</div>
+
+<!-- Divine Portal -->
+<div class="fruit-especial">
+  <h3>🌀✨ Divine Portal</h3>
+  <div class="value">100M-160M</div>
+  <div class="demand">🔥 Demanda: 8/10</div>
+  <div class="trend">📈19%</div>
+</div> 
+
+  <!-- Werewolf tiger -->
+  <div class="fruit-especial">
+    <h3> 🐺Werewolf Tiger</h3>
+    <div class="value">180M-380M</div>
+    <div class="demand">🔥demanda: 9.8/10</div>
+    <div class="trend">📈 2.38%</div>
+  </div>
+
+  <!-- X2 Dinero -->
+<div class="fruit-gamepass">
+  <h3>💰✖️2 X2 Dinero</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- X2 Boss Drop -->
+<div class="fruit-gamepass">
+  <h3>🎁✖️2 X2 Boss Drop</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- X2 Botes Rápidos -->
+<div class="fruit-gamepass">
+  <h3>🚤✖️2 X2 Botes Rápidos</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Legendary Scroll -->
+<div class="fruit-gamepass">
+  <h3>📜🟡 Legendary Scroll</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Mythical Scroll -->
+<div class="fruit-gamepass">
+  <h3>📜✨ Mythical Scroll</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Notificador de Frutas -->
+<div class="fruit-gamepass">
+  <h3>🔔🍎 Notificador de Frutas</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Dark Blade -->
+<div class="fruit-gamepass">
+  <h3>🗡️⚫ Dark Blade</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- X2 Maestría -->
+<div class="fruit-gamepass">
+  <h3>⭐✖️2 X2 Maestría</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+  <!-- +1 Almacenamiento de Fruta -->
+<div class="fruit-gamepass">
+  <h3>📦➕ +1 Almacenamiento de Fruta</h3>
+  <div class="value">0M </div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0% </div>
+</div> 
+<!-- Lime Blade -->
+<div class="fruit-especial">
+  <h3>🗡️💚 Lime Blade</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Galaxy Empyrean Kitsune -->
+<div class="fruit-especial">
+  <h3>🌌🦊 Galaxy Empyrean Kitsune</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Arcsteel Magnet -->
+<div class="fruit-especial">
+  <h3>🧲⚙️ Arcsteel Magnet</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Permanent Dragon Token -->
+<div class="fruit-especial">
+  <h3>🐉🎟️ Permanent Dragon Token</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Rabid Dog Blade -->
+<div class="fruit-especial">
+  <h3>🗡️🐕 Rabid Dog Blade</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Dog Blade -->
+<div class="fruit-especial">
+  <h3>🗡️🐶 Dog Blade</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Crimson Kitsune -->
+<div class="fruit-especial">
+  <h3>🦊❤️ Crimson Kitsune</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Meme -->
+<div class="fruit-especial">
+  <h3>😂 Meme</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Eclipse Dragon Skin -->
+<div class="fruit-especial">
+  <h3>🌘🐉 Eclipse Dragon Skin</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+<!-- Dragon Token -->
+<div class="fruit-especial">
+  <h3>🐉🎟️ Dragon Token</h3>
+  <div class="value">0M</div>
+  <div class="demand">🔥 Demanda: 0/10</div>
+  <div class="trend">→ 0%</div>
+</div>
+
+</h2>
+<footer>
+
+  Fritura18 © 2026
+  <br>
+  Fan-made Blox fruit values.
+<br><br>
+Disclaimer: Los precios son estimados y se determinan mediante: Defensa pasiva o transformación🦖
+Daño de habilidades🗡💢
+Clicks🫵
+Velocidad de clicks🏃‍♂️
+Daño de clicks💢
+Hitbox de clicks🕳️
+Agarre de clicks👊
+Velocidad pasiva, velocidad de vuelo o velocidad de transformación 🏃‍♂️
+PvP 🗡
+Farmeo🪏
+Número de existencias📊 </footer>
+
+  <footer> 2o10i3 en roblox para donaciones de cualquier tipo.</footer>
+  <br>
+  <footer> pagina en desarollo, mas cosas proximamente...</footer>
+  <br>
+  <footer> v0.0.1 <br> Proxima actualización: 18 de septiembre </footer>
+
+ <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.getElementById('search');
+
+  input.addEventListener('input', function () {
+    setTimeout(function () {
+      const filter = input.value.toLowerCase();
+      const fruits = document.querySelectorAll('#fruitList .fruit, #fruitList .fruit-especial, #fruitList .fruit-gamepass');
+
+      fruits.forEach(function (fruit) {
+        const h3 = fruit.querySelector('h3');
+        if (!h3) return;
+        const name = h3.textContent.toLowerCase();
+        if (name.includes(filter)) {
+          fruit.style.display = '';
+        } else {
+          fruit.style.display = 'none';
+        }
+      });
+    }, 0);
+  });
+});
+</script>   
+  </body>
+</html>
